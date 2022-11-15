@@ -1,4 +1,22 @@
-@import './reset';
-@import './header';
-@import './hero';
-@import './benefits';
+@import "./base/reset";
+@import "./utils/vars.scss";
+@import "./components/container";
+@import "./components/section";
+@import "./components/logo";
+@import './utils/hidden';
+@import './components/_button';
+
+
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/benefits";
+@import "./layouts/about";
+@import "./layouts/team";
+@import "./layouts/contact-list";
+@import "./layouts/portfolio-buttons";
+@import "./layouts/portfolio";
+@import "./layouts/footer";
+@import "./layouts/modal";
+@import "./base/common";
+

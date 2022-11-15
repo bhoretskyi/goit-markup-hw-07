@@ -1,0 +1,13 @@
+.about-list {
+    display: flex;
+  }
+  .about-list .item {
+    z-index: -1;
+  }
+  .about-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .about-title {
+    margin-bottom: 50px;
+  }

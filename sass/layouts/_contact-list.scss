@@ -1,0 +1,11 @@
+.contact-item {
+    color: var(--title-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--primary-animation);
+  }
+  
+  .contact-item:hover,
+  .contact-item:focus {
+    color: var(--accent-color);
+  }
