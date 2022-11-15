@@ -405,6 +405,47 @@ img {
   fill: var(--primary-white-color);
 }
 
+/* Постійні клієнти */
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.client__list {
+  display: flex;
+  gap: 30px;
+}
+
+.cards__item {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+
+.cards__link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
+}
+.cards__link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.cards__icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
+}
+.cards__link:hover .cards__icon, .cards__link:focus .cards__icon {
+  fill: var(--accent-color);
+}
+
 .button-list {
   padding: 6px 22px;
   border-radius: 4px;
@@ -517,43 +558,6 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-}
-
-/* Постійні клієнти */
-.client-list {
-  display: flex;
-  gap: 30px;
-}
-
-.client-item {
-  width: calc((100% - 150px) / 6);
-  height: 92px;
-}
-
-.client-link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: var(--primary-animation);
-}
-.client-link:hover {
-  border: 1px solid var(--accent-color);
-}
-
-.client-list-icon {
-  fill: #afb1b8;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--primary-animation);
-}
-.client-link:hover .client-list-icon, .client-link:focus .client-list-icon {
-  fill: var(--accent-color);
 }
 
 .footer-soc-container {
