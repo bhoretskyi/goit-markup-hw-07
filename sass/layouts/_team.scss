@@ -1,10 +1,13 @@
-.team {
+.team__section {
     padding-bottom: 94px;
     background-color: #f5f4fa;
   }
-  .team-list {
+  .team__section-title {
+    margin-bottom: 50px;
+  }
+  .team__members-list {
     display: flex;
-    .item:not(:last-child) {
+    .members__item:not(:last-child) {
       margin-right: 30px;
       padding-bottom: 30px;
       background-color: #ffffff;
@@ -13,7 +16,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
     }
-    .item:last-child {
+    .members__item:last-child {
       padding-bottom: 30px;
       background-color: #ffffff;
     
@@ -24,7 +27,7 @@
   }
    
   
-  .team-title {
+  .member__name {
     margin-top: 30px;
     margin-bottom: 10px;
     
@@ -36,22 +39,27 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
-  .main-team-title {
-    margin-bottom: 50px;
+  .members__position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
   }
   
-  .team-soclist {
+  
+  .team__soclist {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
   
-  .team-soclist-item {
+  .soclist__item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
   }
-  .team-soc-link {
+  .soclist__link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -69,13 +77,13 @@
   }
   }
   
-  .team-social-item {
+  .social__logo {
     fill: #afb1b8;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
-    .team-soc-link:hover &,
-  .team-soc-link:focus & {
+    .soclist__link:hover &,
+  .soclist__link:focus & {
     fill: var(--primary-white-color);
   }
   
@@ -83,10 +91,4 @@
   
   
 
-  .text-team {
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 16px;
-  }
+  

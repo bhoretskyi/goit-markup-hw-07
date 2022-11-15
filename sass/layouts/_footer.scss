@@ -83,3 +83,14 @@
   border-radius: 4px;
   
   }
+  .contact-item {
+    color: var(--title-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--primary-animation);
+    &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  }
+  
