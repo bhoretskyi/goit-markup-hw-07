@@ -22,31 +22,33 @@
   /* Сітка портфоліо */
 
 .portfolio-list {
+  .item {
+    width: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #eeeeee;
+  }
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
   }
   
-  .portfolio-list .item {
-    width: calc((100% - 90px) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
-    border: 1px solid #eeeeee;
-  }
+  
   .portfolio-list-item {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
-  }
-  
-  .portfolio-list-item:hover,
-  .portfolio-list-item:focus {
+    &:hover,
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   
     display: block;
   }
+  }
+  
+  
   
   .portfolio-image {
     position: relative;
@@ -63,10 +65,14 @@
     opacity: 0;
     transform: translateY(100%);
     transition: transform 250ms var(--primary-animation);
+    &:hover {
+      opacity: 1;
+    }
+    .portfolio-image:hover & {
+      transform: translateY(0);
+    }
   }
-  .portfolio-image:hover .portfolio-overlay {
-    transform: translateY(0);
-  }
+  
   .portfolio-overlay-text {
     display: block;
     font-family: "Roboto";
@@ -79,9 +85,7 @@
   
     color: var(--primary-white-color);
   }
-  .portfolio-overlay:hover {
-    opacity: 1;
-  }
+  
   
   /* Постійні клієнти */
   .client-list {
@@ -105,21 +109,25 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
+    &:hover {
+      border: 1px solid var(--accent-color);
   }
+}
+
   .client-list-icon {
     fill: #afb1b8;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
-  }
-  .client-link:hover {
-    border: 1px solid var(--accent-color);
-    
-  }
-  .client-link:hover .client-list-icon,
-  .client-link:focus .client-list-icon {
+    .client-link:hover &,
+  .client-link:focus & {
     fill: var(--accent-color);
   }
+  }
+  
+    
+  
+  
   .footer-soc-container {
     margin-right: 93px;
   }

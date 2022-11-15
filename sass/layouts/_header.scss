@@ -3,8 +3,31 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Навигація */
-.nav-link {
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  .item:not(:last-child) {
+    margin-right: 50px;
+    
+  }
+}
+.navigation__logo {
+  margin-right: 93px;
+}
+
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -17,6 +40,11 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  &:hover,
+&:focus {
+  color: var(--accent-color);
+}
+
 }
 .current::after {
   content: "";
@@ -29,59 +57,57 @@
   background-color: currentColor;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+
+
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.contacts__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
+  &:hover,
+&:focus {
   color: var(--accent-color);
 }
-
-.nav-list {
-  display: flex;
 }
 
-.nav-list .item:not(:last-child) {
-  margin-right: 50px;
-  /* gap: 50px; */
-}
-.contact-list {
-  display: flex;
-  align-items: center;
-}
-.contact-list .item:not(:last-child) {
-  margin-right: 50px;
-  /* gap: 50px; */
-}
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* флекс для иконок в хедере */
-.contact-list-item {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
 
-.header-icon-mail {
+.contacts__mail {
   margin-right: 10px;
   fill: currentColor;
-}
-.contact-link-header:focus .header-icon-mail,
-.contact-link-header:hover .header-icon-mail {
+  .contact-link-header:focus &,
+.contact-link-header:hover & {
   fill: currentColor;
 }
-.header-icon-telephone {
+}
+
+.contacts__telephone {
   margin-right: 10px;
   fill: currentColor;
-}
-.contact-link-header:focus .header-icon-telephone,
-.contact-link-header:hover .header-icon-telephone {
+  .contact-link-header:focus &,
+.contact-link-header:hover & {
   fill: currentColor;
+}
 }

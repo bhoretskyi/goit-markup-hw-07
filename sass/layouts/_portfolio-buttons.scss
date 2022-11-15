@@ -16,9 +16,8 @@
     transition-property: background-color, color, box-shadow, border-radius;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
-  }
-  .button-list:hover,
-  .button-list:focus {
+    &:hover,
+  &:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -26,11 +25,14 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
   }
+  }
+  
   .buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    .item:not(:last-child) {
+      margin-right: 8px;
+    }
   }
-  .buttons .item:not(:last-child) {
-    margin-right: 8px;
-  }
+  

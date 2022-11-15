@@ -3,9 +3,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
-  }
-  
-  .contact-item:hover,
-  .contact-item:focus {
+    &:hover,
+  &:focus {
     color: var(--accent-color);
   }
+  }
+  
+  

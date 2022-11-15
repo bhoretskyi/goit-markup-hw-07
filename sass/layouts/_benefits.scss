@@ -1,13 +1,13 @@
-.benefits {
+.benefits__section {
   padding-bottom: 0px;
 }
-.benefits-list {
+.benefits__list {
   display: flex;
 }
-.benefits-list .item:not(:last-child) {
+.benefits__list .item:not(:last-child) {
   margin-right: 30px;
 }
-.benefits-item {
+.benefits__item {
   display: inline-block;
   width: 270px;
 }

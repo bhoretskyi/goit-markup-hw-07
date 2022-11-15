@@ -1,5 +1,5 @@
 .logo {
-    margin-right: 93px;
+    
     font-family: "Raleway";
     color: var(--title-text-color);
     font-family: Raleway;
@@ -9,12 +9,12 @@
     letter-spacing: 0.03em;
     text-align: left;
   }
-  .logo-blue {
+  .logo__blue {
     color: var(--accent-color);
   }
-  .logo-black {
+  .logo__black {
     color: var(--title-text-color);
   }
-  .logo-white {
+  .logo__white {
     color: var(--primary-white-color);
   }

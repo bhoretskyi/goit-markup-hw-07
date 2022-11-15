@@ -33,11 +33,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
-  }
-  .contact-link-header:hover,
-  .contact-link-header:focus {
+    &:hover,
+  &:focus {
     color: var(--accent-color);
   }
+  }
+  
   
   .footer-subscribe-form {
     display: flex;
