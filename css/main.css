@@ -560,58 +560,35 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer-soc-container {
-  margin-right: 93px;
-}
-
-.footer-soclist {
-  justify-content: start;
-}
-
-.footer-team-soclink {
-  background-color: rgba(255, 255, 255, 0.1019607843);
-}
-
-.footer-soclist-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 0.87;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-}
-
-.footer-social-item {
-  fill: var(--primary-white-color);
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-end;
-}
-
-.footer-info {
-  margin-right: 70px;
-}
-
-.footer {
+.footer__wraper {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-.footer-logo {
+.container__footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.footer__info {
+  margin-right: 70px;
+}
+
+.information__logo {
   margin-right: 0;
 }
 
-.adress-link .item:not(:last-child) {
+.adress {
+  margin-top: 20px;
+}
+.adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /* Адреса */
-.adress-map {
+.adress__map {
   color: var(--primary-white-color);
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -621,31 +598,77 @@ img {
   color: rgba(255, 255, 250, 0.6);
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-
-.contact-link-header {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--primary-animation);
 }
-.contact-link-header:hover, .contact-link-header:focus {
+.contact-item:hover, .contact-item:focus {
   color: var(--accent-color);
 }
 
-.footer-subscribe-form {
+.footer-soc-container {
+  margin-right: 93px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-soclist {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.soclist__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer__soclist-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
+}
+.footer__soclist-link:hover, .footer__soclist-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social__logo {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
+}
+.soclist__link:hover .social__logo, .soclist__link:focus .social__logo {
+  fill: var(--primary-white-color);
+}
+
+.footer__social-item {
+  fill: var(--primary-white-color);
+}
+
+.footer__subscribe-form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.subscribe-form {
+.subscribe__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -659,34 +682,31 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
-
-.subscribe-form::-moz-placeholder {
+.subscribe__input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-form:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-form::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-icon {
+.subscribe__icon {
   fill: var(--primary-white-color);
   margin-left: 10px;
 }
 
-.subscribe-button {
+.subscribe__button {
   margin-top: 0;
   width: 200px;
   height: 50px;
@@ -695,16 +715,6 @@ img {
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.contact-item {
-  color: var(--title-text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--primary-animation);
-}
-.contact-item:hover, .contact-item:focus {
-  color: var(--accent-color);
 }
 
 /* Модальне вікно */
