@@ -446,7 +446,16 @@ img {
   fill: var(--accent-color);
 }
 
-.button-list {
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.buttons .product__filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.product__filter-button {
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
@@ -462,7 +471,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: var(--primary-animation);
 }
-.button-list:hover, .button-list:focus {
+.product__filter-button:hover, .product__filter-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -470,68 +479,35 @@ img {
   border-radius: 4px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.buttons .item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.project-title {
-  color: var(--title-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.project-text {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-}
-
-.adress-link {
-  margin-top: 20px;
-  font-style: normal;
-}
-
-.project-info {
-  padding: 20px 24px 20px;
-}
-
-/* Сітка портфоліо */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-list .item {
+.portfolio-list .product__list-item {
   width: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
   border: 1px solid #eeeeee;
 }
 
-.portfolio-list-item {
+.product__list-link {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--primary-animation);
 }
-.portfolio-list-item:hover, .portfolio-list-item:focus {
+.product__list-link:hover, .product__list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
 }
 
-.portfolio-image {
+.product__list-image {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.product__list-overlay {
   position: absolute;
   top: 0;
   padding: 63px 24px;
@@ -542,14 +518,14 @@ img {
   transform: translateY(100%);
   transition: transform 250ms var(--primary-animation);
 }
-.portfolio-overlay:hover {
+.product__list-overlay:hover {
   opacity: 1;
 }
-.portfolio-image:hover .portfolio-overlay {
+.product__list-image:hover .product__list-overlay {
   transform: translateY(0);
 }
 
-.portfolio-overlay-text {
+.product__list-text {
   display: block;
   font-family: "Roboto";
   font-style: normal;
@@ -558,6 +534,24 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+}
+
+.product__info {
+  padding: 20px 24px 20px;
+}
+
+.product__title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.product__description {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 .footer__wraper {

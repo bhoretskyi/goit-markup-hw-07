@@ -1,28 +1,5 @@
-.project-title {
-    color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
-  
-  .project-text {
-    color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-  }
-  .adress-link {
-    margin-top: 20px;
-    font-style: normal;
-  }
-  .project-info {
-    padding: 20px 24px 20px;
-  }
-
-  /* Сітка портфоліо */
-
 .portfolio-list {
-  .item {
+  .product__list-item {
     width: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
@@ -33,9 +10,8 @@
     margin-left: -30px;
     margin-top: -30px;
   }
-  
-  
-  .portfolio-list-item {
+
+  .product__list-link {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation);
@@ -47,15 +23,12 @@
     display: block;
   }
   }
-  
-  
-  
-  .portfolio-image {
+   .product__list-image {
     position: relative;
     overflow: hidden;
   }
-  
-  .portfolio-overlay {
+
+  .product__list-overlay {
     position: absolute;
     top: 0;
     padding: 63px 24px;
@@ -68,12 +41,12 @@
     &:hover {
       opacity: 1;
     }
-    .portfolio-image:hover & {
+    .product__list-image:hover & {
       transform: translateY(0);
     }
   }
   
-  .portfolio-overlay-text {
+  .product__list-text {
     display: block;
     font-family: "Roboto";
     font-style: normal;
@@ -85,6 +58,37 @@
   
     color: var(--primary-white-color);
   }
+  .product__info {
+    padding: 20px 24px 20px;
+  }
+
+  
+  
+
+.product__title {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .product__description {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+  }
+  
+
+
+  
+  
+  
+  
+  
+  
+ 
+  
   
   
  
