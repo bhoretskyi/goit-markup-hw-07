@@ -1,4 +1,26 @@
 @charset "UTF-8";
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -36,12 +58,17 @@ img {
   height: auto;
 }
 
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
-  --primary-animation: cubic-bezier(0.4, 0, 0.2, 1);
+/* Прибираю точки в списках */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .container {
@@ -85,20 +112,6 @@ img {
 
 .logo__white {
   color: var(--primary-white-color);
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 .button {
@@ -218,6 +231,10 @@ img {
 }
 .contact-link-header:focus .contacts__telephone, .contact-link-header:hover .contacts__telephone {
   fill: currentColor;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .section__hero {
@@ -924,17 +941,4 @@ img {
 
 .modal__button-field {
   text-align: center;
-}
-
-/* Прибираю точки в списках */
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.current {
-  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

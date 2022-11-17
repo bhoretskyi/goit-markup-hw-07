@@ -1,9 +1,13 @@
-@import "./base/reset";
 @import "./utils/vars.scss";
+@import './utils/hidden';
+
+@import "./base/common";
+@import "./base/reset";
+
+@import "./components/current";
 @import "./components/container";
 @import "./components/section";
 @import "./components/logo";
-@import './utils/hidden';
 @import './components/_button';
 
 
@@ -18,5 +22,6 @@
 @import "./layouts/portfolio";
 @import "./layouts/footer";
 @import "./layouts/modal";
-@import "./base/common";
+
+
 

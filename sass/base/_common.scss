@@ -1,15 +1,8 @@
-/* Прибираю точки в списках */
-.list {
-    list-style: none;
-  }
-  .link {
-    text-decoration: none;
-  }
 
 
-  .current {
-    color: var(--accent-color);
-  }
-
-
-  
+  body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
